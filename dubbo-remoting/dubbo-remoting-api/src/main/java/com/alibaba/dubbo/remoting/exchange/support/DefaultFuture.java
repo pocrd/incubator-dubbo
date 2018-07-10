@@ -152,6 +152,10 @@ public class DefaultFuture implements ResponseFuture {
         return response != null;
     }
 
+    public ResponseCallback getCallback() {
+        return callback;
+    }
+
     @Override
     public void setCallback(ResponseCallback callback) {
         if (isDone()) {
